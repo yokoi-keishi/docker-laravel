@@ -10953,19 +10953,35 @@ main {
   background-color: #f5f5f5;
 }
 
-main .container {
+main .container-fluid,
+main .container-sm,
+main .container-md,
+main .container-lg,
+main .container-xl {
   margin: 0 auto;
 }
 
-main .container .tab-content {
+main .container-fluid .tab-content,
+main .container-sm .tab-content,
+main .container-md .tab-content,
+main .container-lg .tab-content,
+main .container-xl .tab-content {
   border-radius: 5px;
 }
 
-main .container .tab-content-text {
+main .container-fluid .tab-content-text,
+main .container-sm .tab-content-text,
+main .container-md .tab-content-text,
+main .container-lg .tab-content-text,
+main .container-xl .tab-content-text {
   font-size: 20px;
 }
 
-main .container .nav .nav-item > a {
+main .container-fluid .nav .nav-item > a,
+main .container-sm .nav .nav-item > a,
+main .container-md .nav .nav-item > a,
+main .container-lg .nav .nav-item > a,
+main .container-xl .nav .nav-item > a {
   font-size: 20px;
 }
 
@@ -10979,9 +10995,23 @@ main .container .nav .nav-item > a {
   border-radius: 50%;
 }
 
-.skill-list > i {
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading-header {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.heading > i {
   font-size: 30px;
   margin-right: 10px;
+}
+
+.heading-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .docker {
