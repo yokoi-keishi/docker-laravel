@@ -49,10 +49,28 @@ main {
   }
 }
 
+.skill-list {
+  & > i {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+.docker {
+  width: 50%;
+}
+
 footer {
   color: #808080;
   font-size: 15px;
-  text-align: right;
   margin-right: 10px;
   margin-top: 10px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    .fab {
+      font-size: 30px;
+      margin-left: 10px;
+    }
+  }
 }

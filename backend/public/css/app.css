@@ -10979,11 +10979,29 @@ main .container .nav .nav-item > a {
   border-radius: 50%;
 }
 
+.skill-list > i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.docker {
+  width: 50%;
+}
+
 footer {
   color: #808080;
-  font-size: 12px;
-  text-align: right;
+  font-size: 15px;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-content .fab {
+  font-size: 30px;
+  margin-left: 10px;
 }
 

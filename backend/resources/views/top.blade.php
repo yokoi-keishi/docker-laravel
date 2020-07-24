@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <!-- style sheet -->
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <title>Document</title>
@@ -71,13 +76,39 @@
         <!-- content 3 -->
         <div class="tab-pane fade" id="skill" role="tabpanel"       aria-labelledby="skill-tab">
           <div class="row px-3 py-3">
-            <div class="col-sm-3 icon-zone">
-              <img class="icon" src="{{ asset('/image/yokoi_keishi.jpg') }}" alt="アイコン">
+          <!-- skill content 1 -->
+            <div class="col-sm-6 skill-list">
+              <p>マークアップ言語</p>
+              <i class="fab fa-html5" style="color: tomato;"></i>
+              <i class="fab fa-css3-alt" style="color: dodgerblue;"></i>
+              <i class="fab fa-js-square" style="color: orange;"></i>
             </div>
-            <div class="col-sm-9 tab-content-text">
-              <p>横井啓志です！</p>
+            <div class="col-sm-6 skill-list">
+              <p>プログラミング言語</p>
+              <i class="fab fa-php" style="color: purple;"></i>
+              <i class="fab fa-laravel" style="color: orange;"></i>
+              <i class="fab fa-sass" style="color: red;"></i>
             </div>
           </div>
+            <!-- skill content 2 -->
+          <div class="row px-3 py-3">
+            <div class="col-sm-6 skill-list">
+              <p>データベース管理</p>
+              <i class="fas fa-database" style="color: gray;"></i>
+            </div>
+            <div class="col-sm-6 skill-list">
+              <p>バージョン管理</p>
+              <i class="fab fa-git-alt" style="color: black;"></i>
+              <i class="fab fa-github" style="color: black;"></i>
+            </div>
+          </div>
+          <div class="row docker px-3 py-3">
+            <div class="col skill-list">
+              <p>オープンプラットフォーム</p>
+              <i class="fab fa-docker" style="color: skyblue;"></i>
+            </div>
+          </div>
+            <!-- End skill content  -->
         </div>
         <!-- content 4 -->
         <div class="tab-pane fade" id="app" role="tabpanel"       aria-labelledby="app-tab">
@@ -96,7 +127,10 @@
   </main>
 
   <footer>
-    ©️ 2019 yokoi-keishi 
+    <div class="footer-content">
+      <a href="https://twitter.com/5531451"><i class="fab fa-twitter-square mr-auto"></i></a>
+      <p>©️ 2019 yokoi-keishi </p>
+    </div>
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
