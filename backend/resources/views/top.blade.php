@@ -29,22 +29,22 @@
   <main class="py-3">
     <div class="container-fluid mx-1">
       <!-- nav bar -->
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
         <!-- nav bar 1 -->
         <li class="nav-item">
-          <a class="nav-link active text-secondary" id="home-tab" data-toggle="tab"      href="#home" role="tab" aria-controls="home"      aria-selected="true">Home</a>
+          <a class="nav-link active text-secondary" id="home-tab" data-toggle="tab"      href="#home" role="tab" aria-controls="home"      aria-selected="true">⓪Home</a>
         </li>
         <!-- nav bar 2 -->
         <li class="nav-item">
-          <a class="nav-link text-secondary" id="profile-tab" data-toggle="tab"      href="#profile" role="tab" aria-controls="profile"      aria-selected="false">Profile</a>
+          <a class="nav-link text-secondary" id="profile-tab" data-toggle="tab"      href="#profile" role="tab" aria-controls="profile"      aria-selected="false">①Profile</a>
         </li>
         <!-- nav bar 3 -->
         <li class="nav-item">
-          <a class="nav-link text-secondary" id="skill-tab" data-toggle="tab"      href="#skill" role="tab" aria-controls="skill"      aria-selected="false">Skill</a>
+          <a class="nav-link text-secondary" id="skill-tab" data-toggle="tab"      href="#skill" role="tab" aria-controls="skill"      aria-selected="false">②Skill</a>
         </li>
         <!-- nav bar 4 -->
         <li class="nav-item">
-          <a class="nav-link text-secondary" id="app-tab" data-toggle="tab"      href="#app" role="tab" aria-controls="app"      aria-selected="false">Application</a>
+          <a class="nav-link text-secondary" id="app-tab" data-toggle="tab"      href="#app" role="tab" aria-controls="app"      aria-selected="false">③Application</a>
         </li>
       </ul>
       <!-- End nav bar -->
@@ -58,7 +58,17 @@
               <img class="icon" src="{{ asset('/image/yokoi_keishi.jpg') }}" alt="アイコン">
             </div>
             <div class="col-sm-10 tab-content-text">
-              <p>初めまして！</p>
+            <p><span class="heading-header"><i class="fas fa-laptop-code"></i> ようこそKeishi Portfolioへ</span></p>
+              <p class="heading-text">
+                初めまして。わざわざお忙しい中、Keishi Portfolioに足を運んでいただきありがとうございます。<br>
+                このポートフォリオは、私のプロフィールとスキルレベルとWEBアプリケーション作品を記載しております。<br>
+                1つ目は、プロフィールは、自己紹介から何故IT系を勉強を始めたのか記載してあります。<br>
+                2つ目は、スキルレベルで今まで学んできたプログラミングスキルやツール等、<br>
+                WEBアプリケーション開発にあたって、学んできたスキルになります。<br>
+                それぞれ作業レベルも記載してあります。<br>
+                最後に、今まで開発してきたオリジナルアプリケーションをご覧いただけるようになっております。<br>
+                早速次のタブへ移動しましょう！<i class="far fa-hand-point-right"></i>
+              </p>
             </div>
           </div>
         </div>
@@ -70,7 +80,7 @@
               <img class="icon" src="{{ asset('/image/yokoi_keishi.jpg') }}" alt="アイコン">
             </div>
             <div class="col-sm-10 tab-content-text">
-              <p><span class="heading-header">自己紹介</p>
+              <p><span class="heading-header"><i class="fab fa-quora"></i>.自己紹介</span></p>
               <p class="heading-text">
                 初めまして。横井啓志と言います。<br>
                 現在は民間航空機の品質管理部門に在籍しております。<br>
@@ -83,14 +93,14 @@
                 これが学生時代に気づいていたら、一流大学に進学していたのではと思っています。<br>
                 得意なことは、球技全般とタイピングです。
               </p>
-              <p><span class="heading-header">なぜ航空機メーカーからIT系スキルを身につけたキッカケ</p>
+              <p><span class="heading-header"><i class="fab fa-quora"></i>.なぜ航空機メーカーからIT系スキルを身につけたキッカケ</span></p>
               <p class="heading-text">
                 キッカケは、<span style="color:red;">今の職場で活かせるスキルをプライベートで身につけて効率化</span>を図りたかったためです。<br>
                 仕事で定期的に改善を集中的に取り組む期間があり、その一部として身につけたスキルで貢献したい想いがありました。<br>
                 そのため周りが持ってないスキルに取り組むにあたり、何が良いか試行錯誤していたところ、<br>
-                将来ITの人員不足が懸念されるという記事を見て、プログラミングを勉強すれば仕事に活かせる！と思い、勉強を始めました。<br>
+                将来IT人材の不足が懸念されるという記事を見て、プログラミングを勉強すればその知識を仕事に活かせる！と思い、勉強を始めました。<br>
               </p>
-              <p><span class="heading-header">とはいえ、プログラミングを勉強するのに何故アプリケーション開発？</p>
+              <p><span class="heading-header"><i class="fab fa-quora"></i>.とはいえ、何故プログラミングを勉強からアプリケーション開発へ？</span></p>
               <p class="heading-text">
                 元々、プログラミングでしたかったことは追々知ることになりましたが、ExcelVBAを学びたかったです。<br>
                 しかし、何から手をつけたら良いのか分からず、ネットで情報収集していたところ、<br>
@@ -117,9 +127,13 @@
               <i class="fab fa-bootstrap" style="blueviolet"></i>
               <p class="heading-text">
                 HTML,CSS : (歴1年)<br>
-                ランディングページの模写可能。レスポンシブデザイン対応のオリジナルページ作成。<br>
+                ランディングページの模写可能<br>
+                レスポンシブデザイン対応のオリジナルページ作成<br>
                 JavaScript : <br>
-                jQueryを用いた動的ページの作成。</p>
+                jQueryを用い、HTML,CSSと組み合わせて動的ページの作成<br>
+                bootstrap : <br>
+                Laravelにてアプリケーション作成時に使用
+              </p>
             </div>
             <div class="col-sm-6 heading">
               <p><span class="heading-header">プログラミング言語</span></p>
@@ -128,30 +142,45 @@
               <i class="fab fa-sass" style="color: red;"></i>
               <p class="heading-text">
                 PHP : (歴1年)<br>
-                基本構文、オブジェクト指向プログラミング、<br>
-                スクラッチでECサイト作成、セキュリティ脆弱性対策(XSS,CSRF,SQLインジェクション等)
+                オブジェクト指向プログラミング、<br>
+                スクラッチでECサイト作成<br>
+                セキュリティ脆弱性対策理解(XSS,CSRF,SQLインジェクション)<br>
+                Laravel : <br>
+                MVCの理解、MYSQLやSQliteに接続し、様々なアプリケーション開発経験<br>
+                Sass : <br>
+                Laravelでアプリケーション開発時に、Sassでスタイルシートを作り上げます<br>
+
               </p>
             </div>
           </div>
             <!-- skill content 2 -->
           <div class="row px-3 py-3">
             <div class="col-sm-6 heading">
-              <p><span class="heading-header">データベース管理</span></p>
+              <p><span class="heading-header">データベース管理システム</span></p>
               <i class="fas fa-database" style="color: gray;"></i>
-              <p class="heading-text"></p>
+              <p class="heading-text">
+                SQL : (歴1年)<br>
+                MYSQLとSQliteの経験。
+                SELECT,INSERT,UPDATE,DELETE文やorderBy,likeを用いたRDBMS理解
+              </p>
             </div>
             <div class="col-sm-6 heading">
-              <p><span class="heading-header">バージョン管理</span></p>
+              <p><span class="heading-header">バージョン管理システム</span></p>
               <i class="fab fa-git-alt" style="color: black;"></i>
               <i class="fab fa-github" style="color: black;"></i>
-              <p class="heading-text"></p>
+              <p class="heading-text">
+                Git : <br>
+                UNIXよりリモートリポジトリとローカルを繋ぎ合わせ、<br>
+                gitコマンドによる保持データのステージングからコミット、プッシュまでを行い、活用<br>
+
+              </p>
             </div>
           </div>
           <div class="row docker px-3 py-3">
             <div class="col heading">
               <p><span class="heading-header">オープンプラットフォーム</span></p>
               <i class="fab fa-docker" style="color: skyblue;"></i>
-              <p class="heading-text"></p>
+              <p class="heading-text">dockerによる仮装開発環境構築</p>
             </div>
           </div>
             <!-- End skill content  -->
